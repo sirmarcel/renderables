@@ -1,0 +1,16 @@
+<entry>
+	<title type="html"><![CDATA[Year ${ week.year.number }, Week ${week.number}]]></title>
+	<link href="${ week.site.url }"/>
+	<id>${ week.site.url }/#${ week.year.number }-${ week.number }</id>
+	<updated>${ week.date.isoformat() }Z</updated>
+	<content type="html">
+		<![CDATA[
+		<h3>${week.number}</h3>
+		<ul>
+		% for link in week.links:
+			${link.render(environment)}
+		% endfor
+		</ul>
+		]]>
+	</content>
+</entry>

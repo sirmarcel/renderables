@@ -1,0 +1,191 @@
+/* Layout */
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+#wrap-body {
+	margin: 2rem auto;
+	padding: 0 2rem;
+	max-width: 100rem;
+	overflow: hidden;
+}
+
+nav {
+	float: left;
+    width: 180px;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+#wrap-main {
+	float: left;
+	width: 70%;
+	max-width: 50rem;
+	overflow: hidden;
+}
+
+
+
+/* Basic styling */
+
+body {
+	background: #fefefe;
+	color: #010101;
+	font-family: Courier, monospace;
+	font-size: 14pt;
+	line-height: 1.2em;
+	text-rendering: optimizeLegibility;
+}
+
+
+nav a {
+	color: #010101;
+	text-decoration: none;
+}
+
+nav h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;
+	line-height: 2rem;
+	font-weight: normal;
+}
+
+footer {
+	font-size: 0.8rem;
+	line-height: 1.0rem;
+	margin: 3rem 0;
+	width: 50%;
+	padding-top: 5rem;
+}
+
+/* Typographic primitives */
+
+
+h1 {
+	font-size: 2rem;
+	line-height: 3rem;
+	font-weight: 800;
+	transition-duration: 1s;
+}
+
+h2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 800;
+}
+
+h3 {
+	font-size: 1.2rem;
+	font-weight: 800;
+}
+
+.highlight {
+	background-color: #69404a;
+}
+
+aside {
+	font-weight: normal;
+	font-size: 0.9rem;
+}
+
+a {
+	color: #1ed73f;
+	text-decoration-style: underline;
+	transition-duration: 0.5s;
+}
+
+b {
+	font-weight: 800;
+}
+
+a:hover {
+	color: #cf7db4;
+	text-decoration-color: #69404a;
+	transition-duration: 0.3s;
+}
+
+p {
+	margin: 0; /* reset default margins */
+	margin-bottom: 1rem;
+}
+
+code {
+	font-family: Courier, monospace;
+	font-weight: normal;
+}
+
+p > code, a > code {
+	font-weight: 800;
+}
+
+pre {
+	border-left: 0.5rem solid #cf7db4;
+	padding-left: 1rem;
+    white-space: pre-wrap;
+}
+
+
+pre > code {
+	font-weight: normal;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+}
+
+.context {
+	font-weight: 800;
+	font-family: Courier, monospace;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+/* Index */
+
+#note-list .metadata {
+	font-size: 0.8rem;
+}
+
+/* Note */
+
+note #title {
+	margin-top: 0;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+note #metadata {
+	font-size: 0.8rem;
+}
+
+note #context {
+	margin: 2rem 0;
+}
+
+note p, note .card {
+	max-width: 35rem;
+}
+
+
+/* SMOLMODE */
+@media only screen and (max-width: 600px) {
+
+	#wrap-main {
+		width: 100%;
+	}
+	footer {
+		width: 100%;
+	}
+}
+

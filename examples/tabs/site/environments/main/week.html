@@ -1,0 +1,8 @@
+<div class="week" id="${ week.year.number }-${ week.number }">
+	<h3>${week.number}</h3>
+	<ul>
+		% for link in week.links:
+		${link.render(environment)}
+		% endfor
+	</ul>
+</div>

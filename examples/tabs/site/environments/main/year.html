@@ -1,0 +1,6 @@
+<section class="year">
+	<h2>${year.number}.</h2>
+		% for week in year.weeks:
+			${week.render(environment)}
+		% endfor
+</section>

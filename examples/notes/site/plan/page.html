@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- See you, console cowboy...  -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>${self.pagetitle()}</title>
+    <link rel="stylesheet" href="${site.url}/static/style.css">
+    <!-- add your own favicon! -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="${site.url}/static/favicon.png"> -->
+    <meta name="description" content="${site.description}">
+    <meta property="og:url" content="${site.url}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  <div id="wrap-body">
+    <nav>
+      <a href="${site.url}"><h1>person's<br>science<br><b>notes</b></h1></a>
+    </nav>
+    <div id="wrap-main">
+
+      <main>
+        ${self.body()}
+      </main>
+      
+      <footer>
+       This site was generated using <a href="https://github.com/sirmarcel/renderables">renderables</a>.
+       There's an <a href="${ site.url }/atom.xml">atom feed</a> if you're into that.
+      </footer>
+
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<%def name="pagetitle()">${site.title}</%def>
+<%inherit file="page.html"/>
+
+<p>Hi!!</p>
+
+<h2>Notes</h2>
+
+<ul id="note-list">
+% for year in site.years:
+  % for note in year.notes:
+	${note.render("index")}
+  % endfor
+% endfor
+</ul>

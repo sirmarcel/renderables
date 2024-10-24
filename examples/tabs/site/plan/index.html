@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- See you, console cowboy...  -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>${site.title}</title>
+    <link rel="stylesheet" href="${site.url}/css/style.css">
+    <meta name="description" content="${site.description}">
+    <meta property="og:url" content="${site.url}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  <div id="wrap-body">
+    <nav>
+      <h1>${site.title}</h1>
+      <p>a weekly link blog</p>
+    </nav>
+    <main>
+      % for year in site.years:
+        ${year.render("main")}
+      % endfor
+      
+      <footer>
+       This site was generated using <a href="https://github.com/sirmarcel/renderables">renderables</a>.
+       There's an <a href="${ site.url }/atom.xml">atom feed</a> if you're into that.
+      </footer>
+
+    </main>
+  </div>
+  </body>
+</html>

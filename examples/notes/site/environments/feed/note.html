@@ -1,0 +1,15 @@
+<entry>
+	<updated>${ note.date.isoformat() }T00:00:00Z</updated>
+	<link href="${ note.site.url }"/>
+	<id>${ note.site.url }/${ note.location }</id>
+	<title type="html"><![CDATA[${ note.title }]]></title>
+	<content type="html">
+<![CDATA[
+<span id="metadata">${note.date}</span>
+<h1 id="title">${note.title}</h1>
+
+${note.content_html}
+
+]]>
+	</content>
+</entry>

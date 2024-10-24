@@ -1,0 +1,184 @@
+/* Layout */
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#wrap-body {
+	padding: 0 3rem;
+	margin: 2rem auto;
+	padding: 0 2rem;
+	max-width: 100rem;
+	overflow: hidden;
+}
+
+nav {
+	float: left;
+    width: 180px;
+    margin-right: 4rem;
+}
+
+main {
+	float: left;
+	width: 70%;
+	max-width: 50rem;
+	overflow: hidden;
+}
+
+footer {
+	display: block;
+	overflow: hidden;
+	font-size: 0.8rem;
+	line-height: 1.0rem;
+	padding-top: 5rem;
+	width: 80%;
+	opacity: 0.8;
+}
+
+
+/* Styling */
+
+body {
+	background: #fefefe;
+	color: #010101;
+	font-family: 'Courier Prime', Courier, monospace;
+	font-size: 14pt;
+	line-height: 1.2em;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	text-decoration: none;
+	color: #010101;
+}
+
+
+a:hover {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
+
+/* DARKMODE! */
+@media (prefers-color-scheme: dark) { 
+	  body {
+	  	background: #333;
+	  	color: #ddd;
+	  }
+
+	  a {
+	  	color: #ddd;
+	  }
+	}
+
+/* Title & Nav */
+
+h1 {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+nav {
+	margin-bottom: 2rem;
+	padding: 1rem;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+nav p {
+	line-height: 1.1rem;
+}
+
+nav a {
+	opacity: 0.8;
+	padding-left: 0.6rem;
+}
+
+/* Years etc. */
+
+
+.year ul, .year ol {
+	list-style: none;
+}
+
+.year h2 {
+	margin: 2rem 0 3rem 0;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-underline-offset: 0.5rem;
+}
+
+.week h3 {
+	float: left;
+	width: 12%;
+	padding: 0 0 0.5rem 0;
+	margin: 0;
+	opacity: 0.8;
+}
+
+.week ul {
+	float: left;
+	width: 88%;
+	padding: 0;
+	margin: 0;
+}
+
+.week {
+	width: 100%;
+	padding-bottom: 1rem;
+	overflow: hidden;
+}
+
+
+/* Entries */
+
+.link {
+	padding-bottom: 0.5rem;
+	overflow: hidden;
+}
+
+.link a {
+	float: left;
+	width: 80%;
+}
+
+.link .tags {
+	float: right;
+	width: 20%;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.2s, opacity 0.2s linear;
+	font-size: 0.8rem;
+	text-align: right;
+}
+
+.link:hover .tags, .tags:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* SMOLMODE */
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	.link .tags {
+		visibility: visible;
+		opacity: 0.3;
+	}
+	.week h3 {
+		width: 100%;
+	}
+	.week h3:before {
+		content: "Week ";
+	}
+	.week ul {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+}

@@ -1,0 +1,12 @@
+- name: ml
+  title: Machine Learning
+  emoji: 🛠️
+  slug: ml
+- name: art
+  title: Art
+  emoji: 🖼️
+  slug: art
+- name: web
+  title: The Internet
+  emoji: 🌐
+  slug: internet

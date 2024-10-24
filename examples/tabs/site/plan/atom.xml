@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title><![CDATA[${site.title}]]></title>
+	<link href="${ site.url }/atom.xml" rel="self"/>
+	<link href="${ site.url }"/>
+	<updated>${ site.updated.isoformat() }Z</updated>
+	<id>${ site.url }/</id>
+	<author>
+		<name><![CDATA[some person]]></name>
+	</author>
+	<generator uri="https://github.com/sirmarcel/renderables/">renderables</generator>
+	% for year in site.years:
+	    ${year.render("feed")}
+	% endfor
+</feed>
